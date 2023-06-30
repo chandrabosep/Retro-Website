@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'canopee';
+    src: url('../fonts/canopee.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'domaine';
+    src: url('../fonts/Domaine.ttf');
+}
+
+@font-face {
+    font-family: 'editorial-light';
+    src: url('../fonts/editorial-light.ttf');
+}
+
+$background: #C4BDB3;
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: $background;
+    position: relative;
+    overflow-x: hidden;
+    h1{
+        font-size: 33vw;
+        font-family: 'canopee';
+        font-weight: 100;
+        background-color: #1C1C19;
+        color: $background;
+        line-height: 28vw;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+.nav{
+    height: 5.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 2vw;
+    border-bottom: 1px solid #222222;
+    font-family: 'editorial-light';
+    color: #505050;
+    .title{
+        height: 1.4rem;
+    }
+    h5{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .menu{
+        width: 3rem;
+        text-align: right;
+    }
+}
+
+.hero{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    .Hero_Container-1,.Hero_Container-3{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        span{
+            background-color: #c03f13;
+            color: rgb(209, 209, 209);
+            font-weight: 100;
+            font-size: 1.3rem;
+            padding: 0.5px 2px;
+            border-radius: 4px;
+        }
+        h4{
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 1rem 0 0.5rem 0;
+            font-family: 'canopee';
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 100;
+            font-family: 'editorial-light';
+        }
+    }
+    .container_img{
+        height: 60%;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #222;
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all ease 0.5s;
+        }
+        &:hover img{
+            scale: 1.1;
+        }
+    } 
+    .Hero_Container-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 30%;
+        height: 100%;
+        border-right: 1px solid #727272;
+        border-left: 1px solid #727272;
+        text-align: center;
+
+        h2{
+            font-family: 'canopee';
+            font-size: 4rem;
+            font-weight: 100;
+        }
+        h3{
+            font-family: 'editorial-light';
+            font-size: 2.3rem;
+            font-weight:300;
+            margin: 1rem 0 2rem 0;
+        }
+        h6{
+            font-weight: 100;
+            font-size: 1.3rem;
+            color: #333333;
+        }
+        span{
+            font-weight: 100;
+            font-family: 'canopee';
+            color: #222222;
+        }
+    }
+    
+    
+}
