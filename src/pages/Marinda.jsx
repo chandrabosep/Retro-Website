@@ -45,7 +45,7 @@ const Marinda = () => {
         duration:0.7
       })
     }
-    return animate
+    return animate();
   },[])
 
   useEffect(()=>{
