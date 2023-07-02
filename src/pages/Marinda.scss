@@ -19,6 +19,9 @@ $background: #C4BDB3;
 
 .main{
     background-color: #222;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
     overflow: hidden;
 }
 
@@ -27,6 +30,7 @@ $background: #C4BDB3;
     width: 100%;
     background-color: $background;
     position: relative;
+    overflow: hidden;
     h1{
         font-size: 33vw;
         font-family: 'canopee';
@@ -63,9 +67,9 @@ $background: #C4BDB3;
 
 .hero{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 4rem;
+    padding: 2rem;
+    overflow: hidden;
     .Hero_Container-1,.Hero_Container-3{
         width: 30%;
         height: 100%;
@@ -98,7 +102,7 @@ $background: #C4BDB3;
     .container_img{
         height: 60%;
         width: 100%;
-        overflow: hidden;
+        overflow:hidden;
         border: 1px solid #444444;
         & img{
             height: 100%;
@@ -114,7 +118,10 @@ $background: #C4BDB3;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items:center;
+        align-content:baseline;
         width: 30%;
+        padding-bottom: 3vw ;
         height: 100%;
         border-right: 1px solid #727272;
         border-left: 1px solid #727272;
@@ -151,6 +158,8 @@ $background: #C4BDB3;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem;
+    overflow: hidden;
+
     .p2_left{
         width:  40%;
         padding-right: 3rem;
@@ -171,6 +180,7 @@ $background: #C4BDB3;
             height: 50%;
             width: 100%;
             object-fit: cover;
+            border: 1px solid #444444;
         }
         p{
             font-size: 1.8rem;
@@ -181,7 +191,7 @@ $background: #C4BDB3;
             font-size: 6rem;
             line-height: 3rem;
             padding: 1.5rem 0.4rem;
-            background-color: #1C1C19;
+            background-color: #252525;
             float: left;
             color: $background;
             margin: 0.5rem 0.6rem 0 0;
@@ -200,6 +210,7 @@ $background: #C4BDB3;
             height: 60%;
             width: 100%;
             object-fit: cover;
+            border: 1px solid #444444;
         }
         h1{
             font-family: 'canopee';
@@ -236,8 +247,10 @@ $background: #C4BDB3;
     background-color: $background;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+
     width: 100%;
-    padding-top: 4rem;
+    padding: 4rem 0;
     .p4_left{
         width: 65%;
         border-right: 1px solid #444;
@@ -295,7 +308,7 @@ $background: #C4BDB3;
                 img{
                     width: 100%;
                     height: 100%;
-                    
+                    border: 1px solid #444444;
                     object-fit: cover;
                     transition: all ease 0.5s;
                 }
@@ -320,6 +333,7 @@ $background: #C4BDB3;
     img{
         width:95%;
         height: 60%;
+        border: 1px solid #444444;
     }
     
     }
@@ -349,7 +363,7 @@ $background: #C4BDB3;
             font-size: 6rem;
             line-height: 3rem;
             padding: 1.5rem 0.6rem;
-            background-color: #1C1C19;
+            background-color: #252525;
             float: left;
             color: $background;
             margin: 0.5rem 1rem 0 0;
@@ -365,6 +379,7 @@ $background: #C4BDB3;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #CAC1B6;
         h5{
             font-family: 'canopee';
             color: #252525;
@@ -374,8 +389,209 @@ $background: #C4BDB3;
    
 }
 
+.awards-banner{
+    background-color: $background;
+    height: fit-content;
+    width: 100%;
+    padding:2rem 2rem; 
+    overflow: hidden;
+
+    
+    .awards_inner{
+    display: flex;
+    justify-content: space-between;
+    color: #252525;
+    gap: 2.5rem;
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    }
+    
+    .award_1,.award_2,.award_3,.award_4{
+        display: flex;
+        align-items:center;
+        gap: 1rem;
+        h5{
+            font-family: 'canopee';
+            font-size: 10rem;
+            font-weight: 100;
+        }
+        .award_section-1,.award_section-2,.award_section-3,.award_section-4{
+            gap: 0.5rem;
+            p{
+                font-family: 'editorial-light';
+                font-size: 1.7rem;
+            }
+            h5{
+                font-family: 'canopee';
+                font-weight: 100;
+                font-size: 5rem;
+                letter-spacing: -3px;
+            }
+        }
+    }
+   
+
+}
+
 .page5{
-    height: 100vh;
     width: 100%;
     background-color: $background;
+    padding: 2rem 2rem;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+
+    .p5_top{
+        display: flex;
+        justify-content: space-between;
+        .p5_top-left{
+            display: flex;
+            flex-direction: column;
+
+            .p5_top-innerTop{
+                display: flex;
+                align-items:self-end;
+                justify-content:flex-start;
+                gap: 1rem;
+                height:20rem;
+                img{
+                    height: 100%;
+                    width: 30%;
+                    border: 1px solid #252525;
+                }
+                h1{
+                    font-family: 'canopee';
+                    font-size:18rem;
+                    font-weight: 500; 
+                    line-height: normal;
+                    transform: scaleY(1.5);
+                }
+            }
+            .p5_top-innerBottom{
+                h1{
+                    font-family: 'canopee';
+                    font-size: 25rem;
+                    line-height: 100%;
+                    letter-spacing: 1rem;
+                }
+            }
+        }
+        .p5_top-right{
+                // star eye
+                width: 50%;
+                img{
+                    width: 100%;
+                    border: 1px solid #252525;
+
+                }
+        }
+    }
+    .p5_center{
+        display: flex;
+        align-items:self-end;
+        justify-content:stretch;
+        gap: 5rem;
+        img{
+            width: 25%;
+            height:max-content;
+            border: 1px solid #252525;
+
+        }
+        h1{
+            font-family: 'canopee';
+            font-size: 20rem;
+            letter-spacing: 1rem;
+            line-height: normal;
+            transform: scaleY(1.4);
+        }
+    }
+    .p5_bottom{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        h1{
+            width: fit-content;
+            font-family: 'canopee';
+            font-size: 22vw;
+            letter-spacing: 10px;
+            line-height: 0.8;
+            background-color: #222222;
+            color: $background;
+            padding: 1rem;
+
+        }
+
+        .p5_bottom-right{
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        .p5_para{
+            font-family: 'editorial-light';
+            font-size: 1.8rem;
+            a{
+                text-decoration: none;
+                color: #222;
+            }
+        }
+        h5{
+            font-family: 'canopee';
+            font-size: 6rem;
+            font-weight: 100;
+        }
+    }
+    
+}
+
+.page6{
+    background-color: $background;
+    height: fit-content;
+}
+footer{
+    background-color: $background;
+    padding: 0 2rem 1rem 2rem;
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #252525;
+        padding-top: 2rem;
+        color: #252525;
+        .footer-left{
+            display: flex;
+            justify-content:space-between;
+            align-items:flex-start;
+            gap: 1rem;
+            span{
+                font-family: 'canopee';
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+            img{
+                width: 1.5rem;
+                height: fit-content;
+            }
+            p{
+                font-family: 'editorial-light';
+                font-size: 1.5rem;
+            }   
+        }
+        .footer-right{
+
+            ul{
+                display: flex;
+                gap: 2rem;
+                .l1{
+                    list-style-type: none;
+                }
+                li{
+                font-family: 'canopee';
+                font-size: 1.3rem;
+                }
+            }
+            
+        }
+    }
 }
