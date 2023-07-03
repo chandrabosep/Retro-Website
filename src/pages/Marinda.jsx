@@ -35,14 +35,14 @@ const Marinda = () => {
 
       tl.to(page1.current,{
         y:'30vh',
-        duration:1,
-        delay:1
+        duration:1.5,
+        delay:1.5
       })
       tl.to(page1.current,{
         y:'0vh',
-        rotate:360,
+        rotate:-360,
         scale:1,
-        duration:0.7
+        duration:0.6
       })
     }
     return animate();
@@ -57,6 +57,9 @@ const Marinda = () => {
   
   return (
     <>
+    <div className='rotate'>
+    <div class="rotate-desc">Please rotate your device<br />to ensure a better experience.</div>
+    </div>
       <div className="main"  ref={ref}>
         <div className="page1" ref={page1}>
           <div className="nav">
@@ -94,7 +97,7 @@ const Marinda = () => {
               INTERACTIVE 
               <span> ARTIST!</span>
             </h2>
-            <img src={img3} alt="" />
+            <img src={img3} alt="left eyed" />
             <p>As a multidisciplinary freelancer, I'm passionate about creating iconic digital experiences through motion, typography, and creative coding for companies and agencies around the world.</p>
             </div>
           <div className="p2_right">
@@ -103,7 +106,9 @@ const Marinda = () => {
           </div>
         </div>
         <div className="page3">
+          <div className='website-text'>
             <h1>WEBISTE</h1>
+          </div>
             <img src={img5} alt="stamp" />
           </div>
           <div className="page4">
@@ -197,7 +202,7 @@ const Marinda = () => {
               </div>            
             </div>
             <div className="hero page6">
-            <div className="Hero_Container-3">
+            <div className="Hero_Container-3 footer-container-6">
                 <div className="container_img">
                   <img src={img11} alt="" />
                 </div>
@@ -238,6 +243,7 @@ const Marinda = () => {
             </footer>
       </div>
     </>
+    
   )
 }
 
