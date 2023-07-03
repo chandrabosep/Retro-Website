@@ -27,7 +27,7 @@ $background: #C4BDB3;
 
 .page1{
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: $background;
     position: relative;
     overflow: hidden;
@@ -181,6 +181,7 @@ $background: #C4BDB3;
             width: 30vw;
             object-fit: cover;
             border: 1px solid #444444;
+            overflow: hidden;
         }
         p{
             font-size: 1.8rem;
@@ -213,6 +214,7 @@ $background: #C4BDB3;
             // width: 58vw;
             object-fit: cover;
             border: 1px solid #444444;
+            overflow: hidden;
         }
         h1{
             font-family: 'canopee';
@@ -559,8 +561,9 @@ $background: #C4BDB3;
     height: fit-content;
     
 }
-footer{
+.page7{
     background-color: $background;
+    height: fit-content;
     padding: 2rem;
     .footer{
         display: flex;

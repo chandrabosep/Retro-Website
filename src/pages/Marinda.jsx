@@ -20,7 +20,7 @@ import { gsap } from 'gsap'
 
 const Marinda = () => {
 
-  const page1 = useRef();
+  const page1 = useRef(null);
   const ref = useRef(null);
 
   useEffect(()=>{
@@ -49,16 +49,22 @@ const Marinda = () => {
   },[])
 
   useEffect(()=>{
-    new LocomotiveScroll({
-      el: ref.current,
-      smooth: true,
+  let locoScroll;
+  locoScroll = new LocomotiveScroll({
+  el: ref.current,
+  smooth: true,
   });
+  new ResizeObserver(() => locoScroll.update()).observe(
+    ref.current
+  );
   },[])
+
+  
   
   return (
     <>
     <div className='rotate'>
-    <div class="rotate-desc">Please rotate your device<br />to ensure a better experience.</div>
+    <div className="rotate-desc">Please rotate your device<br />to ensure a better experience.</div>
     </div>
       <div className="main"  ref={ref}>
         <div className="page1" ref={page1}>
@@ -224,7 +230,7 @@ const Marinda = () => {
                 <p>AvroKO is an award-winning global design firm, established itself as a global leader in interior architecture for hospitality, restaurant and bars. </p>
               </div>
             </div>
-            <footer>
+            <div className='page7'>
               <div className="footer">
                 <div className="footer-left">
                   <span>MARINDA &#xA9;</span>
@@ -240,7 +246,7 @@ const Marinda = () => {
                   </ul>
                 </div>
               </div>
-            </footer>
+            </div>
       </div>
     </>
     
